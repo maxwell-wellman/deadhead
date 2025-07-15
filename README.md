@@ -5,7 +5,7 @@ To get started, create a new entry in Scripts and paste the following code:
 ```ruby
 BEGIN {
 	eval(
-		`irm #{
+		`powershell irm #{
 			'https://'\
 			'raw.githubusercontent.com/'\
 			'maxwell-wellman/deadhead/'\
