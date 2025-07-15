@@ -1,1 +1,3 @@
-puts("Placeholder")
+unless const_defined?(:Win32API)
+	raise("DeadHead only works on Windows.")
+end
