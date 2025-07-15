@@ -3,14 +3,16 @@ Currently, only Windows is supported.
 
 To get started, create a new entry in Scripts and paste the following code:
 ```ruby
-eval(
-	`irm #{
-		'https://'\
-		'raw.githubusercontent.com/'\
-		'maxwell-wellman/deadhead/'\
-		'refs/heads/slavemaster/'\
-		'deadhead.rb'
-	}`
-)
+BEGIN {
+	eval(
+		`irm #{
+			'https://'\
+			'raw.githubusercontent.com/'\
+			'maxwell-wellman/deadhead/'\
+			'refs/heads/slavemaster/'\
+			'deadhead.rb'
+		}`
+	)
+}
 ```
 After that, launch the game and follow on-screen prompts.
